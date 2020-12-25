@@ -1,0 +1,21 @@
+.img-tela-toda {
+    display: none;
+    position: fixed;
+    top: 5px;
+    left: 10px;
+    width: 97vw;
+    height: 98vh;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.img-tela-toda span {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    cursor: pointer;
+    background-image: url('https://www.flaticon.com/svg/static/icons/svg/1828/1828665.svg');
+    height: 25px;
+    width: 25px;
+    background-size: cover;
+}

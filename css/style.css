@@ -1,0 +1,44 @@
+main.galeria {
+    width: 100%;
+    background-color: rgb(247, 249, 251);
+}
+
+main.galeria h1 {
+    padding: 20px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+main.galeria .container-galeria {
+    width: 95%;
+    max-width: 1280px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+main.galeria .container-galeria ul#galeria {
+    list-style-type: none;
+    text-align: center;
+}
+
+main.galeria .container-galeria ul#galeria li {
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+    margin: 4px;
+    cursor: pointer;
+}
+
+main.galeria .container-galeria ul#galeria li img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+main.galeria .container-galeria ul#galeria li img:hover {
+    width: 260px;
+    height: 260px;
+    border-radius: 12px;
+}
