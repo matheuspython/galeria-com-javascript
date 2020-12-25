@@ -33,6 +33,12 @@ header nav.menu-desktop ul li a {
     color: white;
     text-decoration: none;
     text-transform: uppercase;
+    transition: .4s;
+}
+
+header nav.menu-desktop ul li a:hover {
+    color: aqua;
+    font-size: 18px;
 }
 
 nav.menu-mobile {
@@ -41,10 +47,12 @@ nav.menu-mobile {
 
 aside.aside {
     display: none;
+    transition: .4s;
 }
 
 .cobre-tela {
     display: none;
+    transition: .4s;
 }
 
 
