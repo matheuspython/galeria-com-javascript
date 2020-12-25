@@ -1,0 +1,101 @@
+header.header {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(105, 24, 180);
+}
+
+header.header .container {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+    width: 95%;
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 0 2%;
+}
+
+header .container h2 {
+    font-size: 29px;
+    color: white;
+    text-transform: uppercase;
+}
+
+header nav.menu-desktop ul {
+    list-style-type: none;
+    display: flex;
+    width: 350px;
+    height: 100%;
+    justify-content: space-between;
+}
+
+header nav.menu-desktop ul li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav.menu-mobile {
+    display: none;
+}
+
+aside.aside {
+    display: none;
+}
+
+.cobre-tela {
+    display: none;
+}
+
+
+/*inicio media queries*/
+
+@media screen and (max-width: 550px) {
+    nav.menu-desktop {
+        display: none;
+    }
+    nav.menu-mobile {
+        display: block;
+    }
+    nav.menu-mobile .btn-mobile {
+        background-image: url('https://www.flaticon.com/svg/static/icons/svg/545/545705.svg');
+        height: 30px;
+        width: 30px;
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+    aside.aside {
+        width: 50%;
+        height: 100vh;
+        background-color: rgb(76, 62, 199);
+        position: fixed;
+        right: 0;
+        top: 0;
+    }
+    aside.aside ul {
+        list-style-type: none;
+        text-align: center;
+    }
+    aside.aside ul li {
+        margin: 20px 0;
+    }
+    aside.aside ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        text-transform: uppercase;
+        transition: .4s;
+    }
+    aside.aside ul li a:hover {
+        font-size: 22px;
+        color: aqua;
+    }
+    .cobre-tela {
+        width: 50%;
+        height: 100vh;
+        position: fixed;
+        left: 0;
+        top: 0;
+        background-color: rgba(151, 151, 151, 0.76);
+    }
+}
